@@ -1,0 +1,23 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /zcx
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://47.105.60.135:3306/platform-shop
+      username: zcx
+      password: lovezcx
+  redis:
+    host: 47.105.60.135
+    port: 6379
+    password: lovezcx
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
